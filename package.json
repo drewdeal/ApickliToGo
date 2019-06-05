@@ -1,0 +1,30 @@
+{
+  "name": "API_Apickli_Cucumber_Testing",
+  "version": "0.0.1",
+  "author": "The Team",
+  "repository": {
+    "type": "git",
+    "url": "tbd"
+  },
+  "license": "MIT",
+  "private": true,
+  "contributors": [
+    {
+      "name": "Dojo team",
+      "email": "@raytheon"
+    }
+  ],
+  "dependencies": {},
+  "devDependencies": {
+    "apickli": "^2.1.0",
+    "chai": "^3.5.0",
+    "cucumber": "^4.1.0",
+    "eslint": "^3.19.0",
+    "watchify": "^3.11.0"
+  },
+  "scripts": {
+    "cucumber": "cucumber-js src/test/cucumber/features/ -r src/test/cucumber/steps/",
+    "watch:js": "watchify src/test/cucumber/features/* cucumber",
+    "lint": "eslint src/ || true"
+  }
+}

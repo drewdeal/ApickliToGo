@@ -1,11 +1,11 @@
 # ApickliToGo
 
-A stripped down version of Apickli that I introduce to teams for API Contract testing.
+A stripped down version of [Apickli](https://github.com/apickli/apickli) that I introduce to teams for API Contract testing.
 
 We'll add a few gherkins here and there that go beyond this excellent, lightweight tool for your CI test suite.
 
-## Gherkin Expressions
-The following gherkin expressions are implemented in apickli source code [source/apickli/apickli-gherkin.js](source/apickli/apickli-gherkin.js):
+## The built-in Gherkin Expressions
+The following gherkin expressions are implemented in apickli source code [source/apickli/apickli-gherkin.js](https://github.com/apickli/apickli/source/apickli/apickli-gherkin.js):
 
 ```
 GIVEN:
@@ -52,3 +52,7 @@ THEN:
 	I store the value of body path (.*) as (.*) in global scope
   ```
   
+### notes
+You will just need to expand on these to inspect the contents of the API responses.
+Checking for expected attributes in both 200 and errors is enough to confirm a solid contract on Gets.
+

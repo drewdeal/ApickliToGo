@@ -5,7 +5,7 @@ A stripped down version of [Apickli](https://github.com/apickli/apickli) that I 
 We'll add a few gherkins here and there that go beyond this excellent, lightweight tool for your CI test suite.
 
 ## The built-in Gherkin Expressions
-The following gherkin expressions are implemented in apickli source code [source/apickli/apickli-gherkin.js](https://github.com/apickli/apickli/source/apickli/apickli-gherkin.js):
+The following gherkin expressions are implemented in apickli source code [source/apickli/apickli-gherkin.js](https://github.com/apickli/apickli/blob/master/source/apickli/apickli-gherkin.js):
 
 ```
 GIVEN:

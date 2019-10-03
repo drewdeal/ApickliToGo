@@ -19,7 +19,7 @@
     "apickli": "^2.1.0",
     "chai": "^3.5.0",
     "cucumber": "^4.1.0",
-    "eslint": "^3.19.0",
+    "eslint": "^6.5.1",
     "watchify": "^3.11.0"
   },
   "scripts": {

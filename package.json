@@ -11,21 +11,20 @@
   "contributors": [
     {
       "name": "Dojo team",
-      "email": "@raytheon"
+      "email": "drew.deal@thecorp.com"
     }
   ],
-  "dependencies": {},
   "devDependencies": {
-    "apickli": "^2.1.0",
-    "chai": "^3.5.0",
-    "cucumber": "^4.1.0",
-    "eslint": "^4.18.2",
-    "swagger-tools": "^0.10.1",
-    "watchify": "^3.11.0"
+    "apickli": "^3.0.2",
+    "chai": "^4.3.7",
+    "@cucumber/cucumber": "^9.0.1",
+    "eslint": "^8.36.0",
+    "swagger-tools": "^0.10.4",
+    "watchify": "^4.0.0"
   },
   "scripts": {
     "cucumber": "cucumber-js src/test/cucumber/features/ -r src/test/cucumber/steps/",
     "watch:js": "watchify src/test/cucumber/features/* cucumber",
     "lint": "eslint src/ || true"
-  }
+  },
 }

@@ -1,6 +1,6 @@
 'use strict';
 
-const { Given, When, Then } = require('cucumber');
+const { Given, When, Then } = require('@cucumber/cucumber');
 const { expect, assert } = require('chai');
 //const request = require('superagent');
 const _ = require('lodash');

@@ -1,17 +1,13 @@
 'use strict';
 
 const apickli = require('apickli/apickli.js');
-const {defineSupportCode} = require('cucumber');
+const {Before, setDefaultTimeout} = require('@cucumber/cucumber');
 
-defineSupportCode(function({Before}) {
-    Before(function() {
-		this.apickli = new apickli.Apickli('http', "endpoint:80");
-		this.apickli.addRequestHeader('Cache-Control', 'no-cache');
-		this.apickli.setGlobalVariable('authheadername', "authheadername");
-		this.apickli.setGlobalVariable('authheadervalue', "authheadervalue");
-    });
+Before(function() {
+	this.apickli = new apickli.Apickli('http', "endpoint:80");
+	this.apickli.addRequestHeader('Cache-Control', 'no-cache');
+	this.apickli.setGlobalVariable('authheadername', "authheadername");
+	this.apickli.setGlobalVariable('authheadervalue', "authheadervalue");
 });
 
-defineSupportCode(function({setDefaultTimeout}) {
-    setDefaultTimeout(20 * 1000);
-});
+setDefaultTimeout(20 * 1000);
